@@ -1,4 +1,6 @@
 // tailwind.config.js
+import daisyui from "daisyui"
+
 module.exports = {
   content: [
     "./index.html",
@@ -7,5 +9,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    daisyui
+  ],
 };
