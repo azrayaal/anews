@@ -57,7 +57,13 @@ export default function Navbar() {
             <li>
               <details>
                 <summary>Categories</summary>
-                <ul className="p-2 rounded-none z-10">
+                <ul
+                  className="p-2 rounded-none z-10"
+                  style={{
+                    borderBottomLeftRadius: "0.375rem",
+                    borderBottomRightRadius: "0.375rem",
+                  }}
+                >
                   <li>
                     <a>Submenu 1</a>
                   </li>
@@ -107,7 +113,7 @@ export default function Navbar() {
             <input
               type="search"
               id="default-search"
-              className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 shadow-md"
               placeholder="Search anything..."
               required
             />
@@ -123,13 +129,19 @@ export default function Navbar() {
           <img
             src={stark}
             alt="profile"
-            className="w-12 h-12 rounded-md shadow-md ml-4 mr-1"
+            className="w-10 h-10 rounded-md my-auto shadow-md ml-4 mr-1"
           />
-          <ul className="menu menu-horizontal text-black">
+          <ul className="menu menu-horizontal text-black z-10">
             <li>
               <details>
                 <summary className="font-bold ">azrayaal</summary>
-                <ul className="p-2 rounded-none">
+                <ul
+                  className="p-2 rounded-none"
+                  style={{
+                    borderBottomLeftRadius: "0.375rem",
+                    borderBottomRightRadius: "0.375rem",
+                  }}
+                >
                   <li>
                     <a>Setting</a>
                   </li>
